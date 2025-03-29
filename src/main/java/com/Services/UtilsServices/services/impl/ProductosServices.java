@@ -115,20 +115,6 @@ public class ProductosServices implements IProductosServices {
 
       return  metadata;
     }
-    /*
-    private ProductoDTO mapToProductoDTO(Producto producto) {
-        ProductoDTO productoDTO = new ProductoDTO();
-        productoDTO.setId(producto.getId());
-        productoDTO.setNombre(producto.getNombre());
-        productoDTO.setPrecio(producto.getPrecio().doubleValue());
-        if (producto.getCategoriaId() != null) {
-            Optional<Categoria> categoria = CategoriaRepository.findById(producto.getCategoriaId());
-            if (categoria.isPresent()) {
-                productoDTO.setCategoria(categoria.get());
-            }
-        }
-        return productoDTO;
-    }*/
 
     public String uploadImagen(String fileBase64) {
         String base64Data = fileBase64.contains(",")
@@ -141,7 +127,6 @@ public class ProductosServices implements IProductosServices {
         } catch (IOException e) {
             throw new RuntimeException(e);
         }
-
         String secureUrl = (String) uploadResult.get("secure_url");
         return secureUrl;
     }
