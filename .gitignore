@@ -1,3 +1,57 @@
+### Maven/Gradle ###
+target/
+build/
+.gradle/
+.mvn/
+mvnw*
+gradlew*
+gradle-wrapper.jar
+*.iml
+*.ipr
+*.iws
+.DS_Store
+
+### IDE ###
+.idea/
+*.swp
+*.swo
+*.classpath
+*.project
+.settings/
+.vscode/
+bin/
+
+### Logs ###
+*.log
+logs/
+
+### Archivos de entorno ###
+*.env
+*.properties
+!application.properties  # ⚠️ Excluye todo EXCEPTO application.properties (si lo necesitas)
+!bootstrap.properties
+application-*.yml  # Excluye profiles específicos (pero no application.yml principal)
+
+### Base de datos local / cache ###
+*.db
+*.h2.db
+.h2/
+/data/
+/tmp/
+
+### Archivos generados ###
+*.war
+*.ear
+*.jar
+!*.jar.original  # Si necesitas el .jar original de Spring Boot
+
+### Otros ###
+**/__pycache__/
+**/.next/
+**/node_modules/
+**/out/
+**/dist/
+
 HELP.md
 target/
 !.mvn/wrapper/maven-wrapper.jar
@@ -31,3 +85,4 @@ build/
 
 ### VS Code ###
 .vscode/
+
