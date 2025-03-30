@@ -11,5 +11,5 @@ COPY target/UtilsServices-0.0.1-SNAPSHOT.jar app.jar
 # Expone el puerto 8080 en el que Spring Boot está escuchando
 EXPOSE 8080
 
-# Comando para ejecutar la aplicación Spring Boot
+# Comando para ejecutar la aplicación Spring Boots
 ENTRYPOINT ["java", "-jar", "app.jar"]
