@@ -70,6 +70,7 @@ public class ProductosServices implements IProductosServices {
         dto.setNombre(producto.getNombre());
         dto.setPrecio(producto.getPrecio().doubleValue());
         dto.setImagen(producto.getImagenBase64());
+        dto.setEstado(producto.getEstado());
         // 🔥 Obtener la categoría completa (necesitas un servicio/repositorio)
         if (producto.getCategoria() != null) {
             Optional<Categoria> categoria = CategoriaRepository.findById(producto.getCategoria());
